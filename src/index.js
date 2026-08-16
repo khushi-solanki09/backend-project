@@ -1,6 +1,15 @@
-import mongoose  from "mongoose";
-import { DB_NAME } from "./constants";
-import express from "express"
+import dotenv from "dotenv"
+import connectDb from "./db/index.js"
+ 
+dotenv.config({
+    path: './env'
+})
+
+
+
+
+
+/*import express from "express"
 
 const app = express()
 (async () => {
@@ -18,4 +27,4 @@ const app = express()
         console.error("Error : ", error)
         throw err
     }
-})()
+})()*/
